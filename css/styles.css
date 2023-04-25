@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background-color: hsl(233, 47%, 7%);
+  justify-content: center;
+  align-items: center;
+  padding: 0% 15%;
+
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.card-cls {
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  justify-content: center;
+  height: 55%;
+    border-radius: 10px 0 0 10px;
+}
+
+.img-cls {
+  position: relative;
+  width: 100%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 10px 10px 0;
+}
+
+.layer-clr {
+  background-color: hsl(277, 64%, 61%);
+  position: absolute;
+  opacity: 0.48;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-radius: 0 10px 10px 0;
+}
+
+
+.data-cls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 6%;
+
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.7rem;
+  line-height: 1.3;
+  margin-bottom: 5%;
+  font-weight: 700;
+}
+.main-para {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.3;
+  font-size: 14px;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  margin-bottom: 15%;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  gap: 13%;
+}
+
+.sh {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 10%;
+}
+
+.sd {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Lexend Deca";
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.cls-insights {
+  color: hsl(277, 64%, 61%);
+}
+
+@media screen and (max-width: 580px) {
+  .card-cls {
+    flex-direction: column-reverse;
+    width: 75%;
+    height: auto;
+    border-radius:0 0 10px 10px ;
+  }
+
+  .data-cls {
+    text-align: center;
+    padding: 10% 5%;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sh {
+    margin-bottom: 5px;
+  }
+
+
+  img {
+    content: url(../images/image-header-mobile.jpg);
+  }
+
+  .layer-clr, img {
+    border-radius: 10px 10px 0 0;
+  }
+}
